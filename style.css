@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+p{
+  color: #533278;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+header{
+  min-height: 100vh;
+  background-image: url('images/bgHeader.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 10px 15px rgba(0,0,0, 0.15);
+}
+
+header h1{
+  color: #533278;
+  letter-spacing: 1.8rem;
+}
+
+.navbarGP{
+  background-color: #533278 !important;
+}
+
+.animacionRebote{
+  animation: animacionRebote 1s ease-in-out infinite;
+}
+
+#Nosotros{
+  background-image: url('images/bgNosotros.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 10px 15px rgba(0,0,0, 0.15);
+}
+
+.h-bg{
+  background: rgb(255,255,255);
+  background: linear-gradient(33deg, rgba(255,255,255,1) 0%, rgba(83,50,120,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+#Nosotros p{
+  font-size: 38px;
+  font-weight: 300;
+}
+
+.text-rose{
+  color: #a268ab;
+  font-weight: 700;
+}
+
+.bgWhite{
+  background-image: url('images/bgHeader.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#GoPharmaTeam{
+  background-image: url('images/bgNosotros.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 10px 15px rgba(0,0,0, 0.15);
+}
+
+#GoPharmaTeam p{
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 3.8rem;
+}
+
+#Filosofia p{
+  font-size: 6rem;
+  font-weight: 700;
+  color: #a268ab;
+}
+
+.bgPink{
+  background-color: #dec5fc;
+}
+
+#Servicios{
+  box-shadow: 0px 10px 15px rgba(0,0,0, 0.15);
+}
+
+#Servicios p{
+  color: #533278;
+  font-size: 1.8rem;
+}
+
+#Servicios h3{
+  color: #533278;
+  margin: 15px 0px;
+  text-transform: uppercase;
+}
+
+#Clientes{
+  /* background-image: url('images/bgNosotros.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+  box-shadow: 0px 10px 15px rgba(0,0,0, 0.15);
+}
+
+.logoClientes:hover{
+  animation: animacionReboteFiltro 1s ease-in-out infinite;
+}
+
+/* #Contacto{
+
+} */
+
+.sombra{
+  box-shadow: 0px 10px 15px rgba(0,0,0, 0.15);
+}
+
+.btn-formulario{
+  background-color: #a268ab !important;
+  border-color: #a268ab;
+  width: 100%;
+  max-width: 300px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 30px;
+}
+
+.bg-inputs{
+  background-color: #efe1ff;
+}
+
+.bg-inputs:active, .bg-inputs:focus{
+  box-shadow: 0 0 10px rgba(83,50,120,0.5);
+  border-color: #7a4383;
+}
+
+.btn-formulario:hover{
+  background-color: #7a4383 !important;
+  border-color: #7a4383;
+}
+
+.btn-formulario:active, .btn-formulario:focus{
+  box-shadow: none !important;
+  border-color: #7a4383;
+}
+
+.creditos{
+  color: black;
+  font-size: 14px;
+}
+
+.social-icons{
+  font-size: 30px;
+  padding: 0 15px;
+  margin: 10px;
+  color: #c3c3c3;
+  display: inline-block;
+}
+
+.PurpleLayer{
+  background-color: #533278;
+  height: 60px;
+}
+
+/* Animaciones */
+
+@keyframes animacionRebote {
+  0% {
+    transform: scale(.97);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(.97);
+  }
+}
+
+@keyframes animacionReboteFiltro {
+  0% {
+    transform: scale(.97);
+    filter: saturate(80%);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: saturate(100%);
+  }
+
+  100% {
+    transform: scale(.97);
+    filter: saturate(80%);
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  html{
+    font-size: 14px;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  #Nosotros p{
+    font-size: 1.2rem;
+  }
+  #GoPharmaTeam p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  #Filosofia p {
+    font-size: 2rem;
+  }
+  #Servicios img{
+    width: 60%;
+  }
+  #Clientes img{
+    width: 60%;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  #Servicios img{
+    width: 60%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
