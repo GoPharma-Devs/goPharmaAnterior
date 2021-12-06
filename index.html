@@ -10,7 +10,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FT9MJQWFB0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FT9MJQWFB0');
+  </script>
   <title>GoPharma</title>
 </head>
 
@@ -297,16 +308,20 @@
           <form class="row g-3 my-5" name="filepost" method="post" action="file.php" enctype="multipart/form-data"
             id="file">
             <div class="col-12 col-md-6">
-              <input type="text" class="form-control bg-inputs" name="inputNombre" id="inputNombre" placeholder="Nombre">
+              <input type="text" class="form-control bg-inputs" name="inputNombre" id="inputNombre"
+                placeholder="Nombre">
             </div>
             <div class="col-12 col-md-6">
-              <input type="tel" class="form-control bg-inputs" name="inputTelefono" id="inputTelefono" placeholder="Teléfono">
+              <input type="tel" class="form-control bg-inputs" name="inputTelefono" id="inputTelefono"
+                placeholder="Teléfono">
             </div>
             <div class="col-12 col-md-6">
-              <input type="email" class="form-control bg-inputs" name="inputEmail" id="inputEmail" placeholder="Correo Electrónico">
+              <input type="email" class="form-control bg-inputs" name="inputEmail" id="inputEmail"
+                placeholder="Correo Electrónico">
             </div>
             <div class="col-12 col-md-6">
-              <input type="text" class="form-control bg-inputs" name="inputAsunto" id="inputAsunto" placeholder="Asunto">
+              <input type="text" class="form-control bg-inputs" name="inputAsunto" id="inputAsunto"
+                placeholder="Asunto">
             </div>
             <div class="col-12">
               <textarea name="inputMensaje" id="inputMensaje" class="form-control bg-inputs" cols="30" rows="10"
@@ -341,8 +356,8 @@
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
